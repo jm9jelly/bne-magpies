@@ -66,9 +66,24 @@ function App() {
   const nextMatch = useMemo(() => allBracketMatches.find((match) => match.status === 'Upcoming'), [])
   const leader = rankingHasResults ? rankingList[0] : null
 
+  function scrollToCurrentContent() {
+    window.setTimeout(() => {
+      const currentContent = document.querySelector('.content-section')
+      currentContent?.scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+        block: 'start',
+      })
+    }, 0)
+  }
+
+  function navigateToPage(pageId) {
+    setActivePage(pageId)
+    scrollToCurrentContent()
+  }
+
   function openTeam(teamName) {
     setSelectedTeamName(teamName)
-    setActivePage('teams')
+    navigateToPage('teams')
   }
 
   return (
@@ -77,7 +92,7 @@ function App() {
         <img className="hero-logo-watermark" src={magpiesFlightCream} alt="" aria-hidden="true" />
 
         <div className="topbar">
-          <button type="button" className="brand-lockup" onClick={() => setActivePage('overview')}>
+          <button type="button" className="brand-lockup" onClick={() => navigateToPage('overview')}>
             <span className="brand-mark" aria-hidden="true">
               <img src={magpiesLogoCream} alt="" />
             </span>
@@ -97,7 +112,7 @@ function App() {
                   type="button"
                   className={isActive ? 'nav-button active' : 'nav-button'}
                   aria-current={isActive ? 'page' : undefined}
-                  onClick={() => setActivePage(item.id)}
+                  onClick={() => navigateToPage(item.id)}
                 >
                   <Icon aria-hidden="true" size={17} />
                   <span>{item.label}</span>
@@ -114,11 +129,11 @@ function App() {
             <h1>{club.name}</h1>
             <p className="hero-subtitle">{club.heroSubtitle ?? 'Social League'}</p>
             <div className="hero-actions">
-              <button type="button" className="primary-action" onClick={() => setActivePage('bracket')}>
+              <button type="button" className="primary-action" onClick={() => navigateToPage('bracket')}>
                 <CalendarDays aria-hidden="true" size={18} />
                 <span>View Schedule</span>
               </button>
-              <button type="button" className="secondary-action" onClick={() => setActivePage('teams')}>
+              <button type="button" className="secondary-action" onClick={() => navigateToPage('teams')}>
                 <UsersRound aria-hidden="true" size={18} />
                 <span>Teams</span>
               </button>
@@ -151,7 +166,7 @@ function App() {
           />
         </section>
 
-        {activePage === 'overview' && <OverviewPage onNavigate={setActivePage} />}
+        {activePage === 'overview' && <OverviewPage onNavigate={navigateToPage} />}
         {activePage === 'rankings' && <RankingsPage onTeamSelect={openTeam} />}
         {activePage === 'bracket' && <BracketPage onTeamSelect={openTeam} />}
         {activePage === 'teams' && (
