@@ -1,0 +1,538 @@
+{
+  "title": "Brisbane Magpies Volleyball League Schedule",
+  "titleZh": "Brisbane Magpies 排球聯賽行程",
+  "updated": "2026-09-10",
+  "rounds": [
+    {
+      "id": "week-1",
+      "title": "Week 1",
+      "titleZh": "11/9/2026",
+      "matches": [
+        {
+          "slot": "W1-C1-1",
+          "date": "2026-09-11",
+          "time": "18:15-19:30",
+          "court": "Court 1",
+          "teamA": "Flying Dishwashers",
+          "teamB": "Aiyo watch out",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W1-C1-2",
+          "date": "2026-09-11",
+          "time": "19:30-20:45",
+          "court": "Court 1",
+          "teamA": "Woka Woka",
+          "teamB": "Delay no more",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W1-C2-1",
+          "date": "2026-09-11",
+          "time": "18:15-19:30",
+          "court": "Court 2",
+          "teamA": "Katseye",
+          "teamB": "Nei Low May",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W1-C2-2",
+          "date": "2026-09-11",
+          "time": "19:30-20:45",
+          "court": "Court 2",
+          "teamA": "Balls deep",
+          "teamB": "Cafe Sua Da",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        }
+      ]
+    },
+    {
+      "id": "week-2",
+      "title": "Week 2",
+      "titleZh": "18/9/2026",
+      "matches": [
+        {
+          "slot": "W2-C1-1",
+          "date": "2026-09-18",
+          "time": "18:15-19:30",
+          "court": "Court 1",
+          "teamA": "Katseye",
+          "teamB": "Cafe Sua Da",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W2-C1-2",
+          "date": "2026-09-18",
+          "time": "19:30-20:45",
+          "court": "Court 1",
+          "teamA": "Woka Woka",
+          "teamB": "Balls deep",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W2-C2-1",
+          "date": "2026-09-18",
+          "time": "18:15-19:30",
+          "court": "Court 2",
+          "teamA": "Flying Dishwashers",
+          "teamB": "Nei Low May",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W2-C2-2",
+          "date": "2026-09-18",
+          "time": "19:30-20:45",
+          "court": "Court 2",
+          "teamA": "Delay no more",
+          "teamB": "Aiyo watch out",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        }
+      ]
+    },
+    {
+      "id": "week-3",
+      "title": "Week 3",
+      "titleZh": "25/9/2026",
+      "matches": [
+        {
+          "slot": "W3-C1-1",
+          "date": "2026-09-25",
+          "time": "18:15-19:30",
+          "court": "Court 1",
+          "teamA": "Cafe Sua Da",
+          "teamB": "Nei Low May",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W3-C1-2",
+          "date": "2026-09-25",
+          "time": "19:30-20:45",
+          "court": "Court 1",
+          "teamA": "Flying Dishwashers",
+          "teamB": "Delay no more",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W3-C2-1",
+          "date": "2026-09-25",
+          "time": "18:15-19:30",
+          "court": "Court 2",
+          "teamA": "Balls deep",
+          "teamB": "Aiyo watch out",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W3-C2-2",
+          "date": "2026-09-25",
+          "time": "19:30-20:45",
+          "court": "Court 2",
+          "teamA": "Katseye",
+          "teamB": "Woka Woka",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        }
+      ]
+    },
+    {
+      "id": "week-4",
+      "title": "Week 4",
+      "titleZh": "2/10/2026",
+      "matches": [
+        {
+          "slot": "W4-C1-1",
+          "date": "2026-10-02",
+          "time": "18:15-19:30",
+          "court": "Court 1",
+          "teamA": "Katseye",
+          "teamB": "Aiyo watch out",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W4-C1-2",
+          "date": "2026-10-02",
+          "time": "19:30-20:45",
+          "court": "Court 1",
+          "teamA": "Woka Woka",
+          "teamB": "Nei Low May",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W4-C2-1",
+          "date": "2026-10-02",
+          "time": "18:15-19:30",
+          "court": "Court 2",
+          "teamA": "Flying Dishwashers",
+          "teamB": "Cafe Sua Da",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W4-C2-2",
+          "date": "2026-10-02",
+          "time": "19:30-20:45",
+          "court": "Court 2",
+          "teamA": "Balls deep",
+          "teamB": "Delay no more",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        }
+      ]
+    },
+    {
+      "id": "week-5",
+      "title": "Week 5",
+      "titleZh": "9/10/2026",
+      "matches": [
+        {
+          "slot": "W5-C1-1",
+          "date": "2026-10-09",
+          "time": "18:15-19:30",
+          "court": "Court 1",
+          "teamA": "Nei Low May",
+          "teamB": "Aiyo watch out",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W5-C1-2",
+          "date": "2026-10-09",
+          "time": "19:30-20:45",
+          "court": "Court 1",
+          "teamA": "Katseye",
+          "teamB": "Delay no more",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W5-C2-1",
+          "date": "2026-10-09",
+          "time": "18:15-19:30",
+          "court": "Court 2",
+          "teamA": "Flying Dishwashers",
+          "teamB": "Balls deep",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W5-C2-2",
+          "date": "2026-10-09",
+          "time": "19:30-20:45",
+          "court": "Court 2",
+          "teamA": "Woka Woka",
+          "teamB": "Cafe Sua Da",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        }
+      ]
+    },
+    {
+      "id": "week-6",
+      "title": "Week 6",
+      "titleZh": "16/10/2026",
+      "matches": [
+        {
+          "slot": "W6-C1-1",
+          "date": "2026-10-16",
+          "time": "18:15-19:30",
+          "court": "Court 1",
+          "teamA": "Cafe Sua Da",
+          "teamB": "Aiyo watch out",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W6-C1-2",
+          "date": "2026-10-16",
+          "time": "19:30-20:45",
+          "court": "Court 1",
+          "teamA": "Delay no more",
+          "teamB": "Nei Low May",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W6-C2-1",
+          "date": "2026-10-16",
+          "time": "18:15-19:30",
+          "court": "Court 2",
+          "teamA": "Katseye",
+          "teamB": "Balls deep",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W6-C2-2",
+          "date": "2026-10-16",
+          "time": "19:30-20:45",
+          "court": "Court 2",
+          "teamA": "Flying Dishwashers",
+          "teamB": "Woka Woka",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        }
+      ]
+    },
+    {
+      "id": "week-7",
+      "title": "Week 7",
+      "titleZh": "23/10/2026",
+      "matches": [
+        {
+          "slot": "W7-C1-1",
+          "date": "2026-10-23",
+          "time": "18:15-19:30",
+          "court": "Court 1",
+          "teamA": "Flying Dishwashers",
+          "teamB": "Katseye",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W7-C1-2",
+          "date": "2026-10-23",
+          "time": "19:30-20:45",
+          "court": "Court 1",
+          "teamA": "Woka Woka",
+          "teamB": "Aiyo watch out",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W7-C2-1",
+          "date": "2026-10-23",
+          "time": "18:15-19:30",
+          "court": "Court 2",
+          "teamA": "Balls deep",
+          "teamB": "Nei Low May",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        },
+        {
+          "slot": "W7-C2-2",
+          "date": "2026-10-23",
+          "time": "19:30-20:45",
+          "court": "Court 2",
+          "teamA": "Cafe Sua Da",
+          "teamB": "Delay no more",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Upcoming",
+          "advancesTo": "League round"
+        }
+      ]
+    },
+    {
+      "id": "week-8",
+      "title": "Week 8 - Semi Final",
+      "titleZh": "30/10/2026",
+      "matches": [
+        {
+          "slot": "SF-C1-1",
+          "date": "2026-10-30",
+          "time": "18:15-19:30",
+          "court": "Court 1",
+          "teamA": "1st Ranking Team",
+          "teamB": "4th Ranking Team",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Semi Final",
+          "advancesTo": "Final placement"
+        },
+        {
+          "slot": "SF-C1-2",
+          "date": "2026-10-30",
+          "time": "19:30-20:45",
+          "court": "Court 1",
+          "teamA": "5th Ranking Team",
+          "teamB": "8th Ranking Team",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Semi Final",
+          "advancesTo": "Final placement"
+        },
+        {
+          "slot": "SF-C2-1",
+          "date": "2026-10-30",
+          "time": "18:15-19:30",
+          "court": "Court 2",
+          "teamA": "6th Ranking Team",
+          "teamB": "7th Ranking Team",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Semi Final",
+          "advancesTo": "Final placement"
+        },
+        {
+          "slot": "SF-C2-2",
+          "date": "2026-10-30",
+          "time": "19:30-20:45",
+          "court": "Court 2",
+          "teamA": "2nd Ranking Team",
+          "teamB": "3rd Ranking Team",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Semi Final",
+          "advancesTo": "Final placement"
+        }
+      ]
+    },
+    {
+      "id": "week-9",
+      "title": "Week 9 - Final",
+      "titleZh": "6/11/2026",
+      "matches": [
+        {
+          "slot": "F-C1-1",
+          "date": "2026-11-06",
+          "time": "18:15-19:30",
+          "court": "Court 1",
+          "teamA": "7th Ranking Team",
+          "teamB": "8th Ranking Team",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Final",
+          "advancesTo": "Final placement"
+        },
+        {
+          "slot": "F-C1-2",
+          "date": "2026-11-06",
+          "time": "19:30-20:45",
+          "court": "Court 1",
+          "teamA": "1st Ranking Team",
+          "teamB": "2nd Ranking Team",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Final",
+          "advancesTo": "Championship match"
+        },
+        {
+          "slot": "F-C2-1",
+          "date": "2026-11-06",
+          "time": "18:15-19:30",
+          "court": "Court 2",
+          "teamA": "3rd Ranking Team",
+          "teamB": "4th Ranking Team",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Final",
+          "advancesTo": "Final placement"
+        },
+        {
+          "slot": "F-C2-2",
+          "date": "2026-11-06",
+          "time": "19:30-20:45",
+          "court": "Court 2",
+          "teamA": "5th Ranking Team",
+          "teamB": "6th Ranking Team",
+          "scoreA": null,
+          "scoreB": null,
+          "winner": "TBC",
+          "status": "Final",
+          "advancesTo": "Final placement"
+        }
+      ]
+    }
+  ]
+}

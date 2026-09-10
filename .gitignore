@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.netlify/
+.playwright-cli/
+data-import/raw/
+data-import/test-output/
+npm-debug.log*
