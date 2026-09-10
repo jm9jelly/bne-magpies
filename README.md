@@ -9,7 +9,6 @@ Static Vite + React prototype for the Magpies volleyball club website. It is des
 - Weekly league schedule / 每週聯賽行程
 - Team roster view / 隊員名單
 - Rules for Social League / social league 規則
-- Recoloured Magpies logo assets / 已配合網站色調嘅 Magpies logo
 
 ## Content Updates
 
