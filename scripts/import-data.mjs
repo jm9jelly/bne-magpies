@@ -123,13 +123,15 @@ function buildRankings(rows) {
     losses: toNumber(value(row.losses, 0)),
     points: toNumber(value(row.points, 0)),
     setDiff: value(row.setDiff, '0'),
+    setsRatio: value(row.setsRatio, value(row.totalSetsRatio, '')),
+    pointsRatio: value(row.pointsRatio, value(row.totalPointsRatio, '')),
     remarks: value(row.remarks, ''),
   }))
 }
 
 function buildBracket(rows) {
   const title = value(rows[0]?.title, 'Magpies Social League Finals')
-  const titleZh = value(rows[0]?.titleZh, 'Magpies Social League 對戰晉級')
+  const titleZh = value(rows[0]?.titleZh, '')
   const updated = value(rows[0]?.updated, new Date().toISOString().slice(0, 10))
   const rounds = []
 
@@ -158,6 +160,12 @@ function buildBracket(rows) {
       winner: value(row.winner, 'TBC'),
       status: value(row.status, 'Pending'),
       advancesTo: value(row.advancesTo, ''),
+      timezone: value(row.timezone, 'Brisbane time'),
+      sets: splitSets(row.sets),
+      matchScoreA: nullableNumber(row.matchScoreA),
+      matchScoreB: nullableNumber(row.matchScoreB),
+      competitionPointsA: nullableNumber(row.competitionPointsA),
+      competitionPointsB: nullableNumber(row.competitionPointsB),
     })
   }
 
@@ -344,6 +352,17 @@ function splitSkillLevels(valueToSplit) {
     return {
       name: name.trim(),
       points: rest.join(':').split(';').map((point) => point.trim()).filter(Boolean),
+    }
+  })
+}
+
+function splitSets(valueToSplit) {
+  return splitLines(valueToSplit).map((entry, index) => {
+    const [left, right] = entry.split(/[-:]/).map((part) => part.trim())
+    return {
+      set: index + 1,
+      teamA: toNumber(left),
+      teamB: toNumber(right),
     }
   })
 }

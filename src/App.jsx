@@ -15,10 +15,10 @@ import magpiesFlightCream from './assets/magpies-flight-cream-gold.png'
 import magpiesLogoCream from './assets/magpies-mark-cream-gold.png'
 
 const navItems = [
-  { id: 'overview', label: 'Club', labelZh: '球會', icon: ShieldCheck },
-  { id: 'rankings', label: 'Ranking', labelZh: '排名', icon: Trophy },
-  { id: 'bracket', label: 'Schedule', labelZh: '行程', icon: CalendarDays },
-  { id: 'teams', label: 'Teams', labelZh: '隊伍', icon: UsersRound },
+  { id: 'overview', label: 'Club', icon: ShieldCheck },
+  { id: 'rankings', label: 'Ranking', icon: Trophy },
+  { id: 'bracket', label: 'Schedule', icon: CalendarDays },
+  { id: 'teams', label: 'Teams', icon: UsersRound },
 ]
 
 const clubDetails = Array.isArray(club.details) ? club.details : []
@@ -31,7 +31,7 @@ const rankingList = Array.isArray(rankings) ? rankings : []
 const teamList = Array.isArray(teams) ? teams : []
 const rankingHasResults = rankingList.some((team) => team.points > 0 || team.wins > 0 || team.played > 0)
 const allBracketMatches = bracketRounds.flatMap((round) =>
-  (round.matches ?? []).map((match) => ({ ...match, roundTitle: round.title, roundTitleZh: round.titleZh })),
+  (round.matches ?? []).map((match) => ({ ...match, roundTitle: round.title })),
 )
 
 function pageFromHash() {
@@ -116,7 +116,6 @@ function App() {
                 >
                   <Icon aria-hidden="true" size={17} />
                   <span>{item.label}</span>
-                  <small>{item.labelZh}</small>
                 </button>
               )
             })}
@@ -148,21 +147,18 @@ function App() {
         <section className="insight-strip" aria-label="Club snapshot">
           <InsightCard
             label={leader ? 'Top seed' : 'Ranking'}
-            labelZh={leader ? '暫時第一' : '排名'}
             value={leader?.team ?? 'TBC'}
-            meta={leader ? `${leader.points} pts` : 'ranking starts after first round'}
+            meta={leader ? `${leader.points} competition pts` : 'ranking starts after first round'}
           />
           <InsightCard
             label="Teams"
-            labelZh="隊伍"
             value={teamList.length}
             meta={`${teamList.reduce((total, team) => total + (team.members?.length ?? 0), 0)} listed players`}
           />
           <InsightCard
             label="Next battle"
-            labelZh="下場對戰"
             value={nextMatch ? nextMatch.court : 'TBC'}
-            meta={nextMatch ? `${formatDate(nextMatch.date)} · ${nextMatch.time}` : 'schedule pending'}
+            meta={nextMatch ? `${formatDate(nextMatch.date)} · ${nextMatch.time} · Brisbane time` : 'schedule pending'}
           />
         </section>
 
@@ -212,11 +208,10 @@ function NextMatchCard({ match }) {
   )
 }
 
-function InsightCard({ label, labelZh, value, meta, tone = 'default' }) {
+function InsightCard({ label, value, meta, tone = 'default' }) {
   return (
     <article className={`insight-card ${tone}`}>
       <p>{label}</p>
-      <small>{labelZh}</small>
       <strong>{value}</strong>
       <span>{meta}</span>
     </article>
@@ -412,7 +407,7 @@ function RankingsPage({ onTeamSelect }) {
       <div className="section-heading">
         <div>
           <p className="eyebrow">Social League Ranking</p>
-          <h2>Ladder and finals seeding</h2>
+          <h2>Current Ranking - 11/9/2026</h2>
         </div>
         <span className="status-pill">{rankingList.length} teams</span>
       </div>
@@ -423,7 +418,7 @@ function RankingsPage({ onTeamSelect }) {
             <button key={team.team} type="button" className="podium-row" onClick={() => onTeamSelect(team.team)}>
               <span>{team.position}</span>
               <strong>{team.team}</strong>
-              <small>{team.points} pts · {team.setDiff}</small>
+              <small>{team.points} competition pts · points ratio {team.pointsRatio ?? '-'}</small>
             </button>
           ))}
         </aside>
@@ -432,20 +427,17 @@ function RankingsPage({ onTeamSelect }) {
           <table className="responsive-table">
             <thead>
               <tr>
-                <th>Seed</th>
+                <th>Ranking</th>
                 <th>Team</th>
-                <th>Played</th>
-                <th>Wins</th>
-                <th>Losses</th>
-                <th>Points</th>
-                <th>Set Diff</th>
-                <th>Finals Note</th>
+                <th>Total Competition Points</th>
+                <th>Total Sets Ratio</th>
+                <th>Total Points Ratio</th>
               </tr>
             </thead>
             <tbody>
               {rankingList.map((team) => (
                 <tr key={team.team}>
-                  <td data-label="Seed">
+                  <td data-label="Ranking">
                     <strong className="rank-number">{team.position}</strong>
                   </td>
                   <td data-label="Team">
@@ -453,25 +445,72 @@ function RankingsPage({ onTeamSelect }) {
                       {team.team}
                     </button>
                   </td>
-                  <td data-label="Played">{team.played}</td>
-                  <td data-label="Wins">{team.wins}</td>
-                  <td data-label="Losses">{team.losses}</td>
-                  <td data-label="Points">
+                  <td data-label="Competition Points">
                     <strong>{team.points}</strong>
                   </td>
-                  <td data-label="Set Diff">{team.setDiff}</td>
-                  <td data-label="Finals Note">{team.remarks}</td>
+                  <td data-label="Sets Ratio">{team.setsRatio ?? '-'}</td>
+                  <td data-label="Points Ratio">{team.pointsRatio ?? '-'}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       </div>
+
+      <section className="ranking-rules-panel" aria-label="Ranking rules">
+        <div>
+          <h3>Ranking Rules</h3>
+          <p>Each match is played as a best-of-three format.</p>
+          <ul>
+            <li>Set 1 is played to 25 points.</li>
+            <li>Set 2 is played to 25 points.</li>
+            <li>If the score is 1-1, Set 3 is played to 15 points.</li>
+            <li>All sets use the rally point system.</li>
+            <li>A team must win each set by a margin of 2 points.</li>
+          </ul>
+          <p>If a team wins 2-0, the official league match ends immediately.</p>
+          <p>
+            If there is remaining time in the allocated session, both teams may continue playing friendly sets until the
+            end of the session. Friendly set results do not count towards league points, rankings, points ratio, or any
+            official match records.
+          </p>
+        </div>
+        <div>
+          <h3>Ladder Ranking</h3>
+          <p>The ladder is ranked in this order, from most significant to least significant:</p>
+          <ol>
+            <li>Competition Points</li>
+            <li>Sets Ratio</li>
+            <li>Points Ratio</li>
+          </ol>
+          <h3>Point System</h3>
+          <ul>
+            <li>2-0 Win: 3 points</li>
+            <li>2-1 Win: 2 points</li>
+            <li>2-1 Loss: 1 point</li>
+            <li>2-0 Loss: 0 points</li>
+            <li>Forfeit: 0 points</li>
+          </ul>
+        </div>
+      </section>
     </section>
   )
 }
 
 function BracketPage({ onTeamSelect }) {
+  const [selectedMatch, setSelectedMatch] = useState(null)
+
+  function openMatch(match) {
+    setSelectedMatch(match)
+  }
+
+  function handleMatchKeyDown(event, match) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault()
+      openMatch(match)
+    }
+  }
+
   return (
     <section className="content-section">
       <div className="section-heading">
@@ -490,7 +529,7 @@ function BracketPage({ onTeamSelect }) {
                 <small>Week {index + 1}</small>
                 <h3>{round.title}</h3>
               </div>
-              <span>{round.titleZh}</span>
+              <span>{formatRoundDate(round)}</span>
             </div>
 
             <div className="court-grid">
@@ -503,17 +542,37 @@ function BracketPage({ onTeamSelect }) {
                     {(round.matches ?? [])
                       .filter((match) => match.court === court)
                       .map((match) => (
-                        <article className="schedule-match-card" key={match.slot}>
-                          <div className="time-pill">{match.time}</div>
+                        <article
+                          className="schedule-match-card"
+                          key={match.slot}
+                          role="button"
+                          tabIndex={0}
+                          aria-label={`View match details for ${match.teamA} versus ${match.teamB}`}
+                          onClick={() => openMatch(match)}
+                          onKeyDown={(event) => handleMatchKeyDown(event, match)}
+                        >
+                          <div className="time-pill">
+                            <span>{match.time}</span>
+                            <small>Brisbane time</small>
+                          </div>
                           <div className="schedule-teams">
                             <ScheduleTeam name={match.teamA} onTeamSelect={onTeamSelect} />
                             <span className="schedule-vs">vs</span>
                             <ScheduleTeam name={match.teamB} onTeamSelect={onTeamSelect} />
                           </div>
                           <div className="schedule-note">
-                            <span className={`fixture-status ${match.status.toLowerCase().replace(/\s+/g, '-')}`}>
-                              {match.status}
-                            </span>
+                            {matchHasResult(match) ? (
+                              <>
+                                <span className="match-result-pill">{formatMatchResult(match)}</span>
+                                <span className="competition-points">
+                                  Points {formatCompetitionPoints(match)}
+                                </span>
+                              </>
+                            ) : (
+                              <span className={`fixture-status ${match.status.toLowerCase().replace(/\s+/g, '-')}`}>
+                                {match.status}
+                              </span>
+                            )}
                           </div>
                         </article>
                       ))}
@@ -524,6 +583,8 @@ function BracketPage({ onTeamSelect }) {
           </section>
         ))}
       </div>
+
+      {selectedMatch && <MatchDetailModal match={selectedMatch} onClose={() => setSelectedMatch(null)} />}
     </section>
   )
 }
@@ -532,11 +593,85 @@ function ScheduleTeam({ name, onTeamSelect }) {
   const knownTeam = teamList.some((team) => team.name === name)
 
   return knownTeam ? (
-    <button type="button" className="schedule-team" onClick={() => onTeamSelect(name)}>
+    <button
+      type="button"
+      className="schedule-team"
+      onClick={(event) => {
+        event.stopPropagation()
+        onTeamSelect(name)
+      }}
+    >
       {name}
     </button>
   ) : (
     <span className="schedule-team placeholder">{name}</span>
+  )
+}
+
+function MatchDetailModal({ match, onClose }) {
+  return (
+    <div className="match-detail-backdrop" role="presentation" onClick={onClose}>
+      <article
+        className="match-detail-card"
+        role="dialog"
+        aria-modal="true"
+        aria-label={`${match.teamA} versus ${match.teamB} match details`}
+        onClick={(event) => event.stopPropagation()}
+      >
+        <div className="match-detail-heading">
+          <div>
+            <p className="eyebrow">{match.court}</p>
+            <h3>
+              {match.teamA} <span>vs</span> {match.teamB}
+            </h3>
+          </div>
+          <button type="button" className="modal-close" onClick={onClose} aria-label="Close match details">
+            Close
+          </button>
+        </div>
+
+        <div className="detail-score-summary">
+          <span>{formatDate(match.date)}</span>
+          <span>{match.time}</span>
+          <span>{match.timezone ?? 'Brisbane time'}</span>
+          <strong>{match.status}</strong>
+        </div>
+
+        <div className="set-score-grid" aria-label="Set scores">
+          <div className="set-score-row set-score-head">
+            <span>Set</span>
+            <span>{match.teamA}</span>
+            <span>{match.teamB}</span>
+          </div>
+          {Array.isArray(match.sets) && match.sets.length > 0 ? (
+            match.sets.map((set) => (
+              <div className="set-score-row" key={`${match.slot}-set-${set.set}`}>
+                <span>Set {set.set}</span>
+                <strong>{set.teamA}</strong>
+                <strong>{set.teamB}</strong>
+              </div>
+            ))
+          ) : (
+            <p className="scores-empty">Scores not entered yet.</p>
+          )}
+        </div>
+
+        <div className="match-detail-actions">
+          <div>
+            <small>Match Score</small>
+            <strong>{matchHasResult(match) ? formatMatchResult(match) : 'TBC'}</strong>
+          </div>
+          <div>
+            <small>Competition Points</small>
+            <strong>{matchHasCompetitionPoints(match) ? formatCompetitionPoints(match) : 'TBC'}</strong>
+          </div>
+          <div>
+            <small>Winner</small>
+            <strong>{match.winner ?? 'TBC'}</strong>
+          </div>
+        </div>
+      </article>
+    </div>
   )
 }
 
@@ -550,11 +685,11 @@ function TeamsPage({ selectedTeamName, onSelectTeam }) {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Teams</p>
-            <h2>Team members / 隊員名單</h2>
+            <h2>Team Members</h2>
           </div>
           <span className="status-pill">0 rosters</span>
         </div>
-        <div className="empty-state">Team rosters are not imported yet. / 隊員名單尚未匯入。</div>
+        <div className="empty-state">Team rosters are not imported yet.</div>
       </section>
     )
   }
@@ -564,7 +699,7 @@ function TeamsPage({ selectedTeamName, onSelectTeam }) {
       <div className="section-heading">
         <div>
           <p className="eyebrow">Teams</p>
-          <h2>Team members / 隊員名單</h2>
+          <h2>Team Members</h2>
         </div>
         <span className="status-pill">{teamList.length} rosters</span>
       </div>
@@ -625,6 +760,38 @@ function formatDate(value) {
     day: '2-digit',
     month: 'short',
   }).format(new Date(`${value}T00:00:00`))
+}
+
+function formatRoundDate(round) {
+  const firstMatch = round.matches?.[0]
+  if (!firstMatch?.date) return ''
+
+  return new Intl.DateTimeFormat('en-AU', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).format(new Date(`${firstMatch.date}T00:00:00`))
+}
+
+function matchHasResult(match) {
+  return match.matchScoreA !== null && match.matchScoreA !== undefined && match.matchScoreB !== null && match.matchScoreB !== undefined
+}
+
+function matchHasCompetitionPoints(match) {
+  return (
+    match.competitionPointsA !== null &&
+    match.competitionPointsA !== undefined &&
+    match.competitionPointsB !== null &&
+    match.competitionPointsB !== undefined
+  )
+}
+
+function formatMatchResult(match) {
+  return `${match.matchScoreA ?? match.scoreA ?? '-'}:${match.matchScoreB ?? match.scoreB ?? '-'}`
+}
+
+function formatCompetitionPoints(match) {
+  return `${match.competitionPointsA ?? '-'}:${match.competitionPointsB ?? '-'}`
 }
 
 export default App

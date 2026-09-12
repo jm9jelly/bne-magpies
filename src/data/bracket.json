@@ -1,7 +1,7 @@
 {
   "title": "Brisbane Magpies Volleyball League Schedule",
-  "titleZh": "Brisbane Magpies 排球聯賽行程",
-  "updated": "2026-09-10",
+  "titleZh": "",
+  "updated": "2026-09-12",
   "rounds": [
     {
       "id": "week-1",
@@ -15,11 +15,28 @@
           "court": "Court 1",
           "teamA": "Flying Dishwashers",
           "teamB": "Aiyo watch out",
-          "scoreA": null,
-          "scoreB": null,
-          "winner": "TBC",
-          "status": "Upcoming",
-          "advancesTo": "League round"
+          "scoreA": 0,
+          "scoreB": 2,
+          "winner": "Aiyo watch out",
+          "status": "Completed",
+          "advancesTo": "Week 1 result",
+          "timezone": "Brisbane time",
+          "sets": [
+            {
+              "set": 1,
+              "teamA": 19,
+              "teamB": 25
+            },
+            {
+              "set": 2,
+              "teamA": 10,
+              "teamB": 25
+            }
+          ],
+          "matchScoreA": 0,
+          "matchScoreB": 2,
+          "competitionPointsA": 0,
+          "competitionPointsB": 3
         },
         {
           "slot": "W1-C1-2",
@@ -28,11 +45,28 @@
           "court": "Court 1",
           "teamA": "Woka Woka",
           "teamB": "Delay no more",
-          "scoreA": null,
-          "scoreB": null,
-          "winner": "TBC",
-          "status": "Upcoming",
-          "advancesTo": "League round"
+          "scoreA": 2,
+          "scoreB": 0,
+          "winner": "Woka Woka",
+          "status": "Completed",
+          "advancesTo": "Week 1 result",
+          "timezone": "Brisbane time",
+          "sets": [
+            {
+              "set": 1,
+              "teamA": 25,
+              "teamB": 18
+            },
+            {
+              "set": 2,
+              "teamA": 25,
+              "teamB": 21
+            }
+          ],
+          "matchScoreA": 2,
+          "matchScoreB": 0,
+          "competitionPointsA": 3,
+          "competitionPointsB": 0
         },
         {
           "slot": "W1-C2-1",
@@ -41,11 +75,33 @@
           "court": "Court 2",
           "teamA": "Katseye",
           "teamB": "Nei Low May",
-          "scoreA": null,
-          "scoreB": null,
-          "winner": "TBC",
-          "status": "Upcoming",
-          "advancesTo": "League round"
+          "scoreA": 1,
+          "scoreB": 2,
+          "winner": "Nei Low May",
+          "status": "Completed",
+          "advancesTo": "Week 1 result",
+          "timezone": "Brisbane time",
+          "sets": [
+            {
+              "set": 1,
+              "teamA": 14,
+              "teamB": 25
+            },
+            {
+              "set": 2,
+              "teamA": 25,
+              "teamB": 20
+            },
+            {
+              "set": 3,
+              "teamA": 10,
+              "teamB": 15
+            }
+          ],
+          "matchScoreA": 1,
+          "matchScoreB": 2,
+          "competitionPointsA": 1,
+          "competitionPointsB": 2
         },
         {
           "slot": "W1-C2-2",
@@ -54,11 +110,33 @@
           "court": "Court 2",
           "teamA": "Balls deep",
           "teamB": "Cafe Sua Da",
-          "scoreA": null,
-          "scoreB": null,
-          "winner": "TBC",
-          "status": "Upcoming",
-          "advancesTo": "League round"
+          "scoreA": 2,
+          "scoreB": 1,
+          "winner": "Balls deep",
+          "status": "Completed",
+          "advancesTo": "Week 1 result",
+          "timezone": "Brisbane time",
+          "sets": [
+            {
+              "set": 1,
+              "teamA": 26,
+              "teamB": 24
+            },
+            {
+              "set": 2,
+              "teamA": 20,
+              "teamB": 25
+            },
+            {
+              "set": 3,
+              "teamA": 15,
+              "teamB": 7
+            }
+          ],
+          "matchScoreA": 2,
+          "matchScoreB": 1,
+          "competitionPointsA": 2,
+          "competitionPointsB": 1
         }
       ]
     },
@@ -78,7 +156,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W2-C1-2",
@@ -91,7 +175,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W2-C2-1",
@@ -104,7 +194,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W2-C2-2",
@@ -117,7 +213,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         }
       ]
     },
@@ -137,7 +239,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W3-C1-2",
@@ -150,7 +258,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W3-C2-1",
@@ -163,7 +277,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W3-C2-2",
@@ -176,7 +296,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         }
       ]
     },
@@ -196,7 +322,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W4-C1-2",
@@ -209,7 +341,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W4-C2-1",
@@ -222,7 +360,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W4-C2-2",
@@ -235,7 +379,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         }
       ]
     },
@@ -255,7 +405,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W5-C1-2",
@@ -268,7 +424,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W5-C2-1",
@@ -281,7 +443,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W5-C2-2",
@@ -294,7 +462,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         }
       ]
     },
@@ -314,7 +488,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W6-C1-2",
@@ -327,7 +507,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W6-C2-1",
@@ -340,7 +526,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W6-C2-2",
@@ -353,7 +545,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         }
       ]
     },
@@ -373,7 +571,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W7-C1-2",
@@ -386,7 +590,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W7-C2-1",
@@ -399,7 +609,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "W7-C2-2",
@@ -412,7 +628,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Upcoming",
-          "advancesTo": "League round"
+          "advancesTo": "League round",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         }
       ]
     },
@@ -432,7 +654,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Semi Final",
-          "advancesTo": "Final placement"
+          "advancesTo": "Final placement",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "SF-C1-2",
@@ -445,7 +673,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Semi Final",
-          "advancesTo": "Final placement"
+          "advancesTo": "Final placement",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "SF-C2-1",
@@ -458,7 +692,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Semi Final",
-          "advancesTo": "Final placement"
+          "advancesTo": "Final placement",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "SF-C2-2",
@@ -471,7 +711,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Semi Final",
-          "advancesTo": "Final placement"
+          "advancesTo": "Final placement",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         }
       ]
     },
@@ -491,7 +737,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Final",
-          "advancesTo": "Final placement"
+          "advancesTo": "Final placement",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "F-C1-2",
@@ -504,7 +756,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Final",
-          "advancesTo": "Championship match"
+          "advancesTo": "Championship match",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "F-C2-1",
@@ -517,7 +775,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Final",
-          "advancesTo": "Final placement"
+          "advancesTo": "Final placement",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         },
         {
           "slot": "F-C2-2",
@@ -530,7 +794,13 @@
           "scoreB": null,
           "winner": "TBC",
           "status": "Final",
-          "advancesTo": "Final placement"
+          "advancesTo": "Final placement",
+          "timezone": "Brisbane time",
+          "sets": [],
+          "matchScoreA": null,
+          "matchScoreB": null,
+          "competitionPointsA": null,
+          "competitionPointsB": null
         }
       ]
     }

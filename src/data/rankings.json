@@ -1,82 +1,90 @@
 [
   {
     "position": 1,
-    "team": "Flying Dishwashers",
-    "played": 0,
-    "wins": 0,
+    "team": "Aiyo watch out",
+    "played": 1,
+    "wins": 1,
     "losses": 0,
-    "points": 0,
-    "setDiff": "0",
-    "remarks": "Ranking TBC"
+    "points": 3,
+    "setsRatio": "-",
+    "pointsRatio": "1.72",
+    "remarks": "Week 1 updated"
   },
   {
     "position": 2,
-    "team": "Katseye",
-    "played": 0,
-    "wins": 0,
+    "team": "Woka Woka",
+    "played": 1,
+    "wins": 1,
     "losses": 0,
-    "points": 0,
-    "setDiff": "0",
-    "remarks": "Ranking TBC"
+    "points": 3,
+    "setsRatio": "-",
+    "pointsRatio": "1.28",
+    "remarks": "Week 1 updated"
   },
   {
     "position": 3,
-    "team": "Woka Woka",
-    "played": 0,
-    "wins": 0,
+    "team": "Nei Low May",
+    "played": 1,
+    "wins": 1,
     "losses": 0,
-    "points": 0,
-    "setDiff": "0",
-    "remarks": "Ranking TBC"
+    "points": 2,
+    "setsRatio": "-",
+    "pointsRatio": "1.22",
+    "remarks": "Week 1 updated"
   },
   {
     "position": 4,
     "team": "Balls deep",
-    "played": 0,
-    "wins": 0,
+    "played": 1,
+    "wins": 1,
     "losses": 0,
-    "points": 0,
-    "setDiff": "0",
-    "remarks": "Ranking TBC"
+    "points": 2,
+    "setsRatio": "-",
+    "pointsRatio": "1.09",
+    "remarks": "Week 1 updated"
   },
   {
     "position": 5,
     "team": "Cafe Sua Da",
-    "played": 0,
+    "played": 1,
     "wins": 0,
-    "losses": 0,
-    "points": 0,
-    "setDiff": "0",
-    "remarks": "Ranking TBC"
+    "losses": 1,
+    "points": 1,
+    "setsRatio": "-",
+    "pointsRatio": "0.92",
+    "remarks": "Week 1 updated"
   },
   {
     "position": 6,
-    "team": "Delay no more",
-    "played": 0,
+    "team": "Katseye",
+    "played": 1,
     "wins": 0,
-    "losses": 0,
-    "points": 0,
-    "setDiff": "0",
-    "remarks": "Ranking TBC"
+    "losses": 1,
+    "points": 1,
+    "setsRatio": "-",
+    "pointsRatio": "0.82",
+    "remarks": "Week 1 updated"
   },
   {
     "position": 7,
-    "team": "Nei Low May",
-    "played": 0,
+    "team": "Delay no more",
+    "played": 1,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "points": 0,
-    "setDiff": "0",
-    "remarks": "Ranking TBC"
+    "setsRatio": "-",
+    "pointsRatio": "0.78",
+    "remarks": "Week 1 updated"
   },
   {
     "position": 8,
-    "team": "Aiyo watch out",
-    "played": 0,
+    "team": "Flying Dishwashers",
+    "played": 1,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "points": 0,
-    "setDiff": "0",
-    "remarks": "Ranking TBC"
+    "setsRatio": "-",
+    "pointsRatio": "0.58",
+    "remarks": "Week 1 updated"
   }
 ]

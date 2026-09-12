@@ -32,7 +32,7 @@
   "details": [
     {
       "label": "Home court",
-      "value": "Brown Plains State High School",
+      "value": "Browns Plains State High School",
       "href": "https://www.google.com/maps/search/?api=1&query=Browns%20Plains%20State%20High%20School%2C%20Browns%20Plains%20QLD"
     },
     {
@@ -94,101 +94,99 @@
   ],
   "rules": [
     {
-      "title": "1. General Playing Rules / 基本比賽規則",
+      "title": "1. General Playing Rules",
       "paragraphs": [
-        "Matches generally follow the current FIVB Official Volleyball Rules, except where modified by Brisbane Magpies Volleyball League Competition Rules.",
-        "If there is any inconsistency, Brisbane Magpies Volleyball League Competition Rules take priority.",
-        "本聯賽原則上依照現行 FIVB 國際排球總會官方排球規則進行；如有不同，則以本聯賽規則為準。"
+        "Matches will generally be played in accordance with the current FIVB Official Volleyball Rules, except where modified by the Brisbane Magpies Volleyball League Competition Rules.",
+        "Where there is any inconsistency, the Brisbane Magpies Volleyball League Competition Rules take priority."
       ]
     },
     {
-      "title": "2. Match Format / 比賽賽制",
+      "title": "2. Match Format",
       "items": [
-        "Each match consists of three sets: first set 25 points, second set 25 points, third set 15 points.",
-        "Deuce applies where required. A team must win by 2 points.",
-        "Around 15 minutes warm-up time will normally be provided before each match, subject to the competition schedule.",
-        "Semi-final and final players must have attended at least 2 matches in the first seven weeks. Substitutes with fewer than 2 attendances require opponent approval.",
-        "每場比賽共三局；如達至平分，採用 Deuce 制，必須領先 2 分才可勝出該局。"
+        "Each match consists of three sets: Set 1 to 25 points, Set 2 to 25 points, and Set 3 to 15 points when required.",
+        "Deuce applies where required. A team must win each set by 2 points.",
+        "Approximately 15 minutes of warm-up time will normally be provided before each match, subject to the competition schedule.",
+        "Players in the semi-finals and finals must have attended at least 2 matches in the first seven weeks. Substitutes with fewer than 2 attendances require opponent approval.",
+        "Each team is entitled to one 30-second time-out per match. The time-out must be requested by the team captain and approved by the referee.",
+        "Each team may use a maximum of one time-out per match."
       ]
     },
     {
-      "title": "3. Female Player Requirement / 女性球員規定",
+      "title": "3. Female Player Requirement",
       "items": [
         "Each team must have at least two female players on court at all times during the match.",
-        "This applies throughout every set, rotation, and substitution.",
-        "Teams are strongly encouraged to have at least one additional female substitute available.",
-        "A male player cannot replace a required female player to satisfy this rule.",
-        "If a team cannot maintain at least two female players on court, the team will forfeit the match.",
-        "每隊在比賽期間，場上任何時候必須至少有 2 名女性球員。"
+        "This requirement applies throughout the entire match, including all sets, rotations, and substitutions.",
+        "If a female player is injured or unavailable, she must be replaced by another eligible female player where required to maintain the two-female-player minimum.",
+        "A male player cannot replace a required female player for the purpose of satisfying this rule.",
+        "If a player is injured or unavailable and no substitute player is available, the team may continue playing with the player's position left vacant. However, the team will lose the right to serve whenever the rotation reaches the vacant position.",
+        "If a team cannot maintain at least 4 players on court for any reason, the team will forfeit the match."
       ]
     },
     {
-      "title": "4. Libero Rules / Libero 規則",
+      "title": "4. Libero Rules - No Super Libero",
       "items": [
         "Super Libero is not permitted.",
-        "Standard FIVB Libero rules apply, including back-row restrictions, attacking, and blocking limits.",
+        "Standard FIVB Libero rules apply, including restrictions on back-row play, attacking, and blocking.",
         "Only one Libero may be on court at any time.",
-        "Libero replacements must not reduce the female-player requirement or be used to bypass it.",
-        "本聯賽不允許使用 Super Libero。"
+        "Libero replacements must not result in fewer than two female players being on court or be used to circumvent the female-player requirement."
       ]
     },
     {
-      "title": "5. Team and Player Responsibilities / 隊伍及球員責任",
+      "title": "5. Team and Player Responsibilities",
       "items": [
-        "Each team is responsible for ensuring it has enough eligible players to complete the match.",
-        "Teams should arrange sufficient substitutes for injuries, illness, late arrivals, and absences.",
-        "Insufficient eligible players may result in match forfeit.",
-        "All participating players must comply with League eligibility requirements.",
-        "每隊有責任確保有足夠合資格球員完成比賽。"
+        "Each team is responsible for ensuring that it has enough eligible players available to complete the match.",
+        "Teams should arrange sufficient substitute players to account for injuries, illness, late arrivals, and absences.",
+        "Having insufficient eligible players, including being unable to maintain at least two female players on court, may result in a match forfeit.",
+        "All participating players must comply with the eligibility requirements established by the League."
       ]
     },
     {
-      "title": "6. Referee Authority and Final Decisions / 裁判權限及最終決定",
+      "title": "6. Referee Authority and Final Decisions",
       "paragraphs": [
-        "The referee is responsible for interpreting and applying the playing rules during the game. Players and teams must respect referee decisions.",
-        "Where a situation is not specifically addressed by these Competition Rules, the referee may decide based on FIVB rules, fairness, player safety, and match circumstances.",
+        "The referee has authority over the match and is responsible for interpreting and applying the playing rules during the game. All players and teams must respect referee decisions.",
+        "Where a situation arises during a match that is not specifically addressed by these Competition Rules, the referee may make a decision based on the FIVB Official Volleyball Rules, sporting fairness, player safety, and the circumstances of the match.",
         "The referee's decision on all on-court matters is final.",
-        "裁判負責比賽期間的判決，所有球員及隊伍必須尊重裁判的決定。"
+        "Repeated arguing, abuse, threats, intimidation, or refusal to follow a referee decision may result in a warning, penalty, removal from the match, or further disciplinary action by the League."
       ]
     },
     {
-      "title": "7. Sportsmanship and Conduct / 體育精神及行為",
+      "title": "7. Sportsmanship and Conduct",
+      "paragraphs": [
+        "All players, coaches, and team representatives must:"
+      ],
       "items": [
         "Treat referees, opponents, teammates, organisers, and spectators with respect.",
         "Follow reasonable directions given by referees and League organisers.",
         "Avoid abusive, threatening, discriminatory, or aggressive behaviour.",
         "Avoid deliberately dangerous play.",
         "Demonstrate appropriate sportsmanship before, during, and after matches.",
-        "所有球員、教練及隊伍代表必須保持良好體育精神。"
+        "Serious or repeated misconduct may result in removal from the match or further disciplinary action."
       ]
     },
     {
-      "title": "8. Player Safety and Injuries / 受傷及球員安全",
+      "title": "8. Player Safety and Injuries",
       "items": [
-        "Player safety takes priority. A referee or League organiser may stop play if there is an immediate safety concern.",
-        "Players are responsible for assessing whether they are physically able to participate.",
+        "Player safety takes priority. A referee or League organiser may stop play where they reasonably believe that a player is injured or continuing play creates an immediate safety concern.",
+        "Players are responsible for assessing whether they are physically able to participate and should not continue playing where doing so may create an unreasonable risk to themselves or others.",
         "An injury to a female player does not remove the two-female-player requirement.",
-        "If a team cannot maintain at least two female players after an injury, the team will forfeit the match.",
-        "球員安全為首要考慮。"
+        "If the team is unable to maintain at least two female players on court following an injury, the team will forfeit the match."
       ]
     },
     {
-      "title": "9. Waiver and Acknowledgement of Risk / 免責聲明及風險確認",
+      "title": "9. Waiver and Acknowledgement of Risk",
       "items": [
-        "All participating players must complete the required waiver and acknowledgement of risk before participating.",
-        "Each team is responsible for ensuring its players have completed the required documentation.",
+        "All participating players must complete the Brisbane Magpies Volleyball League's required Waiver and Acknowledgement of Risk before participating in the competition.",
+        "Each team is responsible for ensuring that all players participating on its behalf have completed the required documentation.",
         "A player who has not completed the required documentation may be refused participation.",
-        "Nothing in the waiver excludes any right or liability that cannot lawfully be excluded under applicable Australian or Queensland law.",
-        "所有參賽球員必須在參加聯賽前完成指定免責聲明及風險確認。"
+        "Nothing in the waiver is intended to exclude any right or liability that cannot lawfully be excluded under applicable Australian or Queensland law."
       ]
     },
     {
-      "title": "10. Final Interpretation and Administration / 最終解釋及行政決定",
+      "title": "10. Final Interpretation and Administration",
       "paragraphs": [
         "The referee's decision is final for all on-court matters during a match.",
-        "For matters outside active match play, the decision of Brisbane Magpies Volleyball League organiser will be final, subject to applicable law.",
-        "All teams and players are responsible for reading and understanding these Competition Rules before participating.",
-        "所有隊伍及球員在參賽前均有責任閱讀及了解本比賽規則。"
+        "For matters outside active match play, including player eligibility, competition scheduling, registration matters, off-court disciplinary matters, administrative matters, and administrative interpretation of the Competition Rules, the decision of the Brisbane Magpies Volleyball League organiser will be final, subject to applicable law.",
+        "All teams and players are responsible for reading and understanding these Competition Rules before participating."
       ]
     }
   ],

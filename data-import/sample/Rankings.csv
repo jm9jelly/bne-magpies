@@ -1,9 +1,9 @@
-position,team,played,wins,losses,points,setDiff,remarks
-1,Flying Dishwashers,0,0,0,0,0,Ranking TBC
-2,Katseye,0,0,0,0,0,Ranking TBC
-3,Woka Woka,0,0,0,0,0,Ranking TBC
-4,Balls deep,0,0,0,0,0,Ranking TBC
-5,Cafe Sua Da,0,0,0,0,0,Ranking TBC
-6,Delay no more,0,0,0,0,0,Ranking TBC
-7,Nei Low May,0,0,0,0,0,Ranking TBC
-8,Aiyo watch out,0,0,0,0,0,Ranking TBC
+position,team,played,wins,losses,points,setDiff,setsRatio,pointsRatio,remarks
+1,Aiyo watch out,1,1,0,3,,-,1.72,Week 1 updated
+2,Woka Woka,1,1,0,3,,-,1.28,Week 1 updated
+3,Nei Low May,1,1,0,2,,-,1.22,Week 1 updated
+4,Balls deep,1,1,0,2,,-,1.09,Week 1 updated
+5,Cafe Sua Da,1,0,1,1,,-,0.92,Week 1 updated
+6,Katseye,1,0,1,1,,-,0.82,Week 1 updated
+7,Delay no more,1,0,1,0,,-,0.78,Week 1 updated
+8,Flying Dishwashers,1,0,1,0,,-,0.58,Week 1 updated
