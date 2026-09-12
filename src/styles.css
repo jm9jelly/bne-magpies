@@ -359,15 +359,17 @@ button {
   position: relative;
   z-index: 1;
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .nav-button span {
-  font-family: var(--body-font);
-  font-size: 1.02rem;
-  font-style: normal;
-  font-weight: 850;
-  line-height: 1.05;
+  font-family: var(--display-font);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 950;
+  line-height: 0.95;
+  white-space: nowrap;
   text-transform: uppercase;
 }
 
