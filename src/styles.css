@@ -236,8 +236,8 @@ button {
 }
 
 .brand-mark {
-  width: 74px;
-  height: 58px;
+  width: 88px;
+  height: 68px;
   border-radius: 0;
   background: transparent;
   color: inherit;
@@ -296,19 +296,20 @@ button {
 .nav-button {
   position: relative;
   display: grid;
-  grid-template-columns: auto minmax(0, auto);
-  gap: 7px;
+  grid-template-columns: 34px minmax(0, 1fr);
+  column-gap: 12px;
+  row-gap: 2px;
   align-items: center;
-  justify-content: center;
+  justify-content: stretch;
   min-height: 56px;
-  padding: 9px 10px;
+  padding: 10px 18px;
   overflow: hidden;
   border: 1px solid rgba(255, 253, 246, 0.14);
   border-radius: 12px;
   background: rgba(255, 253, 246, 0.08);
   color: #fffdf6;
   cursor: pointer;
-  text-align: center;
+  text-align: left;
 }
 
 .nav-button::before,
@@ -346,6 +347,9 @@ button {
   position: relative;
   z-index: 1;
   grid-row: span 2;
+  justify-self: center;
+  width: 24px;
+  height: 24px;
   color: var(--gold);
   transition: transform 180ms var(--button-ease), color 180ms var(--button-ease);
 }
@@ -359,11 +363,11 @@ button {
 }
 
 .nav-button span {
-  font-family: var(--display-font);
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 950;
-  line-height: 0.95;
+  font-family: var(--body-font);
+  font-size: 1.02rem;
+  font-style: normal;
+  font-weight: 850;
+  line-height: 1.05;
   text-transform: uppercase;
 }
 
@@ -2390,8 +2394,8 @@ a.club-monogram:focus-visible {
   }
 
   .brand-mark {
-    width: 64px;
-    height: 50px;
+    width: 76px;
+    height: 58px;
   }
 
   .page-nav,
@@ -2585,7 +2589,14 @@ a.club-monogram:focus-visible {
   }
 
   .nav-button {
+    grid-template-columns: 30px minmax(0, 1fr);
     min-height: 52px;
+    padding: 10px 14px;
+  }
+
+  .nav-button svg {
+    width: 22px;
+    height: 22px;
   }
 
   .responsive-table td {
