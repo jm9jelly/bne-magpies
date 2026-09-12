@@ -681,7 +681,7 @@ function TeamsPage({ selectedTeamName, onSelectTeam }) {
 
   if (!selectedTeam) {
     return (
-      <section className="content-section">
+      <section className="content-section teams-section">
         <div className="section-heading">
           <div>
             <p className="eyebrow">Teams</p>
@@ -695,7 +695,7 @@ function TeamsPage({ selectedTeamName, onSelectTeam }) {
   }
 
   return (
-    <section className="content-section">
+    <section className="content-section teams-section">
       <div className="section-heading">
         <div>
           <p className="eyebrow">Teams</p>
