@@ -407,7 +407,7 @@ function RankingsPage({ onTeamSelect }) {
       <div className="section-heading">
         <div>
           <p className="eyebrow">Social League Ranking</p>
-          <h2>Current Ranking - 11/9/2026</h2>
+          <h2>Current Ranking - 18/9/2026</h2>
         </div>
         <span className="status-pill">{rankingList.length} teams</span>
       </div>

@@ -1,7 +1,7 @@
 {
   "title": "Brisbane Magpies Volleyball League Schedule",
   "titleZh": "",
-  "updated": "2026-09-12",
+  "updated": "2026-09-18",
   "rounds": [
     {
       "id": "week-1",
@@ -152,17 +152,28 @@
           "court": "Court 1",
           "teamA": "Katseye",
           "teamB": "Cafe Sua Da",
-          "scoreA": null,
-          "scoreB": null,
-          "winner": "TBC",
-          "status": "Upcoming",
-          "advancesTo": "League round",
+          "scoreA": 2,
+          "scoreB": 0,
+          "winner": "Katseye",
+          "status": "Completed",
+          "advancesTo": "Week 2 result",
           "timezone": "Brisbane time",
-          "sets": [],
-          "matchScoreA": null,
-          "matchScoreB": null,
-          "competitionPointsA": null,
-          "competitionPointsB": null
+          "sets": [
+            {
+              "set": 1,
+              "teamA": 25,
+              "teamB": 13
+            },
+            {
+              "set": 2,
+              "teamA": 27,
+              "teamB": 25
+            }
+          ],
+          "matchScoreA": 2,
+          "matchScoreB": 0,
+          "competitionPointsA": 3,
+          "competitionPointsB": 0
         },
         {
           "slot": "W2-C1-2",
@@ -171,17 +182,33 @@
           "court": "Court 1",
           "teamA": "Woka Woka",
           "teamB": "Balls deep",
-          "scoreA": null,
-          "scoreB": null,
-          "winner": "TBC",
-          "status": "Upcoming",
-          "advancesTo": "League round",
+          "scoreA": 2,
+          "scoreB": 1,
+          "winner": "Woka Woka",
+          "status": "Completed",
+          "advancesTo": "Week 2 result",
           "timezone": "Brisbane time",
-          "sets": [],
-          "matchScoreA": null,
-          "matchScoreB": null,
-          "competitionPointsA": null,
-          "competitionPointsB": null
+          "sets": [
+            {
+              "set": 1,
+              "teamA": 25,
+              "teamB": 18
+            },
+            {
+              "set": 2,
+              "teamA": 20,
+              "teamB": 25
+            },
+            {
+              "set": 3,
+              "teamA": 16,
+              "teamB": 14
+            }
+          ],
+          "matchScoreA": 2,
+          "matchScoreB": 1,
+          "competitionPointsA": 2,
+          "competitionPointsB": 1
         },
         {
           "slot": "W2-C2-1",
@@ -190,17 +217,33 @@
           "court": "Court 2",
           "teamA": "Flying Dishwashers",
           "teamB": "Nei Low May",
-          "scoreA": null,
-          "scoreB": null,
-          "winner": "TBC",
-          "status": "Upcoming",
-          "advancesTo": "League round",
+          "scoreA": 2,
+          "scoreB": 1,
+          "winner": "Flying Dishwashers",
+          "status": "Completed",
+          "advancesTo": "Week 2 result",
           "timezone": "Brisbane time",
-          "sets": [],
-          "matchScoreA": null,
-          "matchScoreB": null,
-          "competitionPointsA": null,
-          "competitionPointsB": null
+          "sets": [
+            {
+              "set": 1,
+              "teamA": 21,
+              "teamB": 25
+            },
+            {
+              "set": 2,
+              "teamA": 26,
+              "teamB": 24
+            },
+            {
+              "set": 3,
+              "teamA": 15,
+              "teamB": 13
+            }
+          ],
+          "matchScoreA": 2,
+          "matchScoreB": 1,
+          "competitionPointsA": 2,
+          "competitionPointsB": 1
         },
         {
           "slot": "W2-C2-2",
@@ -209,17 +252,28 @@
           "court": "Court 2",
           "teamA": "Delay no more",
           "teamB": "Aiyo watch out",
-          "scoreA": null,
-          "scoreB": null,
-          "winner": "TBC",
-          "status": "Upcoming",
-          "advancesTo": "League round",
+          "scoreA": 2,
+          "scoreB": 0,
+          "winner": "Delay no more",
+          "status": "Completed",
+          "advancesTo": "Week 2 result",
           "timezone": "Brisbane time",
-          "sets": [],
-          "matchScoreA": null,
-          "matchScoreB": null,
-          "competitionPointsA": null,
-          "competitionPointsB": null
+          "sets": [
+            {
+              "set": 1,
+              "teamA": 25,
+              "teamB": 14
+            },
+            {
+              "set": 2,
+              "teamA": 25,
+              "teamB": 20
+            }
+          ],
+          "matchScoreA": 2,
+          "matchScoreB": 0,
+          "competitionPointsA": 3,
+          "competitionPointsB": 0
         }
       ]
     },
